@@ -59,6 +59,9 @@ Resources:
         OptionName: EnvironmentType
         Value: LoadBalanced
       - Namespace: aws:elasticbeanstalk:environment
+        OptionName: LoadBalancerType
+        Value: application
+      - Namespace: aws:elasticbeanstalk:environment
         OptionName: ServiceRole
         Value: !Ref 'EBTrustRole'
       - Namespace: aws:elasticbeanstalk:healthreporting:system
